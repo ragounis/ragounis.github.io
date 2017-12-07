@@ -3092,8 +3092,8 @@ THREE.CanvasRenderer = function ( parameters ) {
 			windowHalfX = window.innerWidth / 2,
 			windowHalfY = window.innerHeight / 2,
 			SEPARATION = 200,
-			AMOUNTX = 0,
-			AMOUNTY = 00,
+			AMOUNTX = 10,
+			AMOUNTY = 10,
 			camera, scene, renderer;
 			init();
 			animate();
@@ -3107,7 +3107,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 				scene = new THREE.Scene();
 				renderer = new THREE.CanvasRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth - 10, window.innerHeight - 15);
 				renderer.setClearColorHex( 0x0000ff, 1 );
 				container.appendChild( renderer.domElement );
 				// particles
@@ -3146,7 +3146,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 				windowHalfY = window.innerHeight / 2;
 				camera.aspect = window.innerWidth / window.innerHeight;
 				camera.updateProjectionMatrix();
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( window.innerWidth - 10, window.innerHeight -15);
 			}
 			//
 			function onDocumentMouseMove(event) {
