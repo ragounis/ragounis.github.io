@@ -3108,12 +3108,12 @@ THREE.CanvasRenderer = function ( parameters ) {
 				renderer = new THREE.CanvasRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
-				renderer.setClearColorHex( 0xffffff, 1 );
+				//renderer.setClearColorHex( 0xffffff, 1 );
 				container.appendChild( renderer.domElement );
 				// particles
 				var PI2 = Math.PI * 2;
 				var material = new THREE.SpriteCanvasMaterial( {
-					color: 0x0000ff,
+					color: 0xffffff,
 					program: function ( context ) {
 						context.beginPath();
 						context.arc( 0, 0, 0.5, 0, PI2, true );
@@ -3133,7 +3133,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 					geometry.vertices.push( particle.position );
 				}
 				// lines
-				var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0x0000ff, opacity: 0.5 } ) );
+				var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0xffffff, opacity: 0.5 } ) );
 				scene.add( line );
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 				document.addEventListener( 'touchstart', onDocumentTouchStart, false );

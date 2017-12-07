@@ -1,10 +1,9 @@
-@import url("https://use.typekit.net/cko3hpv.css");
+@import url(font/archia/stylesheet.css);
+
 .wrapper {
     position: absolute;
     line-height: 70%;
-    font-family: futura-pt, sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    paddding-left:20%;
 }
 
 #info {
@@ -13,12 +12,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 1.33vw;
+    font-family: 'archiaregular', Fallback, sans-serif;
+    font-size: 2vw;
+    line-height:0.5;
+    color:white;
 }
 
 .decription {
     position: absolute;   
     width = vw;
     height = 10px;
-    background-color: blue;
+}
+.lined {
+    float:left;
+    width:100%;
+    border-top: 1px solid #333;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
 }
