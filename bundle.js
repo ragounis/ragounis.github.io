@@ -3092,8 +3092,8 @@ THREE.CanvasRenderer = function ( parameters ) {
 			windowHalfX = window.innerWidth / 2,
 			windowHalfY = window.innerHeight / 2,
 			SEPARATION = 200,
-			AMOUNTX = 10,
-			AMOUNTY = 10,
+			AMOUNTX = 0,
+			AMOUNTY = 00,
 			camera, scene, renderer;
 			init();
 			animate();
@@ -3108,7 +3108,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 				renderer = new THREE.CanvasRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
-				//renderer.setClearColorHex( 0xffffff, 1 );
+				renderer.setClearColorHex( 0x0000ff, 1 );
 				container.appendChild( renderer.domElement );
 				// particles
 				var PI2 = Math.PI * 2;
