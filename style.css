@@ -26,14 +26,17 @@ html, body {
     overflow: auto;
 }
 #desc {
-    padding-top: 15%;
+    padding-top: 200px;
     padding-left: 22%;
-    padding-bottom: 15%;
+    padding-bottom: 200px;
     padding-right: 22%;
     font-family: 'bariolregular', Fallback, sans-serif;
-        line-height:1.4;
+    line-height:1.4;
     font-size: 2.5vw;
     color:blue;
+    word-break: break-all;
+    line-break: auto;
+    hyphens: auto;
 }
 
 .footer {
@@ -43,4 +46,32 @@ html, body {
 }
 #contact {
     height: 400px;
+}
+
+@media (max-width:800px) {
+  #info {
+    width: vw;
+    position: relative; 
+    top: 45%;
+    left: 7%;
+    text-align: center;
+    font-family: 'archiaregular', Fallback, sans-serif;
+    line-height:0.5;
+    color:white;
+    font-size: 4.65vw;
+  }
+
+  #desc {
+    padding-top: 30%;
+    padding-left: 10%;
+    padding-bottom: 30%;
+    padding-right: 10%;
+    font-family: 'bariolregular', Fallback, sans-serif;
+    line-height:1.4;
+    font-size: 25px;
+    color:blue;
+    word-break: break-all;
+    line-break: auto;
+    hyphens: auto;
+}
 }
