@@ -26,16 +26,15 @@ html, body {
     overflow: auto;
 }
 #desc {
-    padding-top: 200px;
+    padding-top: 15%;
     padding-left: 22%;
-    padding-bottom: 200px;
+    padding-bottom: 15%;
     padding-right: 22%;
     font-family: 'bariolregular', Fallback, sans-serif;
     line-height:1.4;
     font-size: 2.5vw;
     color:blue;
     word-break: break-all;
-    line-break: auto;
     hyphens: auto;
 }
 
@@ -45,7 +44,19 @@ html, body {
     background-color:blue;
 }
 #contact {
-    height: 400px;
+    padding-top: 10%;
+    padding-left: 27%;
+    padding-bottom: 10%;
+    padding-right: 27%;
+}
+
+#icon {
+   filter: invert(100%);
+   width: 6vw; 
+   padding-top: 5%;
+   padding-left: 5%;
+   padding-bottom: 5%;
+   padding-right: 5%;
 }
 
 @media (max-width:800px) {
@@ -73,5 +84,13 @@ html, body {
     word-break: break-all;
     line-break: auto;
     hyphens: auto;
+}
+#icon {
+   filter: invert(100%);
+   width: 10vw; 
+   padding-top: 10%;
+   padding-left: 5%;
+   padding-bottom: 10%;
+   padding-right: 5%;
 }
 }
