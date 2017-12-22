@@ -33,7 +33,7 @@ html, body {
     font-family: 'bariolregular', Fallback, sans-serif;
     line-height:1.4;
     font-size: 2.5vw;
-    color:blue;
+    color: #1D024B;
     word-break: break-all;
     hyphens: auto;
 }
@@ -41,7 +41,7 @@ html, body {
 .footer {
     width: 100%;
     overflow: auto;
-    background-color:blue;
+    background-color: #1D024B;
 }
 #contact {
     padding-top: 10%;
@@ -74,13 +74,12 @@ html, body {
 
   #desc {
     padding-top: 30%;
-    padding-left: 10%;
-    padding-bottom: 30%;
+    margin:;
     padding-right: 10%;
     font-family: 'bariolregular', Fallback, sans-serif;
     line-height:1.4;
     font-size: 25px;
-    color:blue;
+    color: #1D024B;
     word-break: break-all;
     line-break: auto;
     hyphens: auto;

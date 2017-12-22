@@ -3108,7 +3108,7 @@ THREE.CanvasRenderer = function ( parameters ) {
 				renderer = new THREE.CanvasRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth - 10, window.innerHeight - 15);
-				renderer.setClearColorHex( 0x0000ff, 1 );
+				renderer.setClearColorHex( 0x1D024B, 1 );
 				container.appendChild( renderer.domElement );
 				// particles
 				var PI2 = Math.PI * 2;
