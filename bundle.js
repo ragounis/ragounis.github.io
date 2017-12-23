@@ -3178,3 +3178,9 @@ THREE.CanvasRenderer = function ( parameters ) {
 				camera.lookAt( scene.position );
 				renderer.render( scene, camera );
 			}
+			$(function() {
+			  $('a[href*=#]').on('click', function(e) {
+			    e.preventDefault();
+			    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+			  });
+			});
